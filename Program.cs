@@ -30,7 +30,7 @@ namespace P8_Diary_entry
             Console.WriteLine(entradaDiario);
 
             // - El nombre del archivo deberá incluir la fecha del día en que se ejecuta el programa en su nombre.
-            using (StreamWriter sw = new StreamWriter(fechaParaDiario))
+            using (StreamWriter sw = new StreamWriter(fechaParaDiario + ".txt"))
             {
                 // - Guardar el texto ingresado por el usuario en un archivo con extensión .txt
                 sw.WriteLine(entradaDiario);
